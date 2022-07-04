@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+    p {
+      color: white;
+      background-color: blue;
+      padding: 5px;
+      border: 1px solid black;
+    }
+  </style>
+  <style media="all and (max-width: 500px)">
+    p {
+      color: blue;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5"><p>Heart Rate Monitor</p></h3>
+                <img src="{{ url_for('video_feed') }}" width="50%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5"><p>Respiration Rate Monitor</p></h3>
+                <img src="{{ url_for('resp_feed') }}" width="50%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5"><p>SpO2 Oxygen Level Monitor</p></h3>
+                <img src="{{ url_for('spo2_feed') }}" width="50%">
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

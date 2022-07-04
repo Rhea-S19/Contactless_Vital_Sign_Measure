@@ -36,7 +36,7 @@ The webcam light should activate and there should be a window that appears. The 
   ```
 for Heart Rate
   ```
-      run "main-r.py"  and "main-s.py" for SpO2 Oxygen level. 
+      run "main-r.py" 
   ```
 for Respiration Rate
   ```

@@ -32,7 +32,7 @@ The webcam light should activate and there should be a window that appears. The 
 <!--- - In case of plotting graphs, run "graph_plot.py" - For the Eulerian Video Magnification implementation, run "amplify_color.py" --->
   -If want to run individually on GUI, 
   ```
-      run "main.py" 
+      run "mainhr.py" 
   ```
 for Heart Rate
   ```

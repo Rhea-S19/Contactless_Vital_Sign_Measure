@@ -32,5 +32,14 @@ The webcam light should activate and there should be a window that appears. The 
 <!--- - In case of plotting graphs, run "graph_plot.py" - For the Eulerian Video Magnification implementation, run "amplify_color.py" --->
   -If want to run individually on GUI, 
   ```
-      run "main.py" for Heart Rate, "main-r.py" for Respiration Rate and "main-s.py" for SpO2 Oxygen level. 
+      run "main.py" 
   ```
+for Heart Rate
+  ```
+      run "main-r.py"  and "main-s.py" for SpO2 Oxygen level. 
+  ```
+for Respiration Rate
+  ```
+      run "main-s.py"  
+  ```
+for SpO2 Oxygen level

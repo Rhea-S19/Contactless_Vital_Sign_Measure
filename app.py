@@ -337,7 +337,9 @@ def gen_resp():
         # print(rr)
         resp.append(rr)
 
+        cv2.rectangle(frame, (videoWidth // 2, videoHeight // 2),(realWidth - videoWidth // 2, realHeight - videoHeight // 2), boxColor, boxWeight)
         cv2.putText(frame, "BPM: %d" % rr, bpmTextLocation, font, fontScale, fontColor, lineType)
+
 
         if len(sys.argv) != 2:
             cv2.imshow("Webcam Respiration Rate Monitor", frame)

@@ -440,10 +440,10 @@ def gen_spo2():
 
         # detectionFrame = frame[videoHeight//2:realHeight-videoHeight//2, videoWidth//2:realWidth-videoWidth//2, :]
 
-        # detectionFrame = frame[int(videoHeight / 2):int(realHeight - videoHeight / 2),int(videoWidth / 2):int(realWidth - int(videoWidth / 2)), :]
+        detectionFrame = frame[int(videoHeight / 2):int(realHeight - videoHeight / 2),int(videoWidth / 2):int(realWidth - int(videoWidth / 2)), :]
 
         # Red channel operations
-        red_channel = frame[:, :, 2]
+        red_channel = detectionFrame[:, :, 2]
         mean_red = np.mean(red_channel)
         # print("RED MEAN", mean_red)
         std_red = np.std(red_channel)
@@ -452,10 +452,10 @@ def gen_spo2():
         # print("RED FINAL",red_final)
 
         # Blue channel operations
-        blue_channel = frame[:, :, 0]
+        blue_channel = detectionFrame[:, :, 0]
         mean_blue = np.mean(blue_channel)
         # print("BLUE MEAN", mean_blue)
-        std_blue = np.std(red_channel)
+        std_blue = np.std(blue_channel)
         # print("BLUE STD", std_blue)
         blue_final = std_blue / mean_blue
         # print("BLUE FINAL",blue_final)
